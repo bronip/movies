@@ -14,10 +14,9 @@ var express = require("express");
 var app = express();
 var cors = require("cors");
 var dotenv = require("dotenv").config();
-const { MONGO_CONNECT_STRING } = process.env;
 const MoviesDB = require("./modules/moviesDB.js");
 const db = new MoviesDB();
-//var mongoose = require("mongoose");
+
 
 app.use(cors());
 app.use(express.json());
